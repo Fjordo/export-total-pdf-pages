@@ -1,9 +1,9 @@
 # export-total-pdf-pages
-Simple Shell script which export a CSV containing all pdf under a folder with their page number
+Simple Python3 script which export a CSV containing all pdf under current folder with their page number
 
 ## prerequisites ##
-uses pdfinfo cli command. Install it from poppler-utils package under Centos like OS: `yum install poppler-utils`
+uses PyPDF2 from PdfFileReader library, which need to be installed with `pip install PyPDF2`
 
 ## usage ##
 
-execute the script and redirect the output to a file: `sh export-total-pdf-pages.sh >> total.txt`
+execute the script and redirect the output to a file: `python3 export-total-pdf-pages.sh >> total.csv`
